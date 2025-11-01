@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "243eba5b-f41b-4b1d-ae9d-295a701fc985",
+		"name": "Feign Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47473242",
+		"_collection_link": "https://developeryt01-7284073.postman.co/workspace/Learn-With-Developer's-Workspac~9db7ae3f-5ed0-4806-8f2a-bb7ddc626ae8/collection/47473242-243eba5b-f41b-4b1d-ae9d-295a701fc985?action=share&source=collection_link&creator=47473242"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"john the gamer\",\n    \"email\": \"johndoe@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/3a9f7506-2126-4ebf-bf60-48b1c9efc1b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"3a9f7506-2126-4ebf-bf60-48b1c9efc1b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/3a9f7506-2126-4ebf-bf60-48b1c9efc1b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"3a9f7506-2126-4ebf-bf60-48b1c9efc1b9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
