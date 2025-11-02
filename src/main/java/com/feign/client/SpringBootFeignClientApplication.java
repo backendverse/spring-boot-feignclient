@@ -12,4 +12,11 @@ public class SpringBootFeignClientApplication {
         SpringApplication.run(SpringBootFeignClientApplication.class, args);
     }
 
+    void sendHeaders() {
+//        1. Send Multiple Static Headers Per API
+//        2. Send Single Dynamic Header Per API
+//        3. Send Multiple Dynamic Headers Per API
+//        4. Send Multiple Dynamic Headers For Every API
+    }
+
 }
