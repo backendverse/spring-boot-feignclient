@@ -10,7 +10,7 @@ import java.util.Map;
 @FeignClient(url = "${user.service.url}", path = "/users", value = "third-party-user-service")
 public interface ThirdPartyUserService {
 
-    @GetMapping("/{id}")
+    @GetMapping("/getById/{id}")
 //    User getUserById(@PathVariable("id") String id, @RequestHeader("api-key") String header);
     User getUserById(@PathVariable("id") String id);
 

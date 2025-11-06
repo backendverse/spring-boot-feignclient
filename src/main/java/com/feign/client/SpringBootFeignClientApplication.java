@@ -19,4 +19,12 @@ public class SpringBootFeignClientApplication {
 //        4. Send Multiple Dynamic Headers For Every API
     }
 
+    void interceptorMastery() {
+//        1. Logging Of Each API Call
+//        2. Headers Mutation
+//        3. Query params Mutation
+//        4. Request Method Mutation
+//        5. URI Mutation
+//        6. Request Body Mutation
+    }
 }
